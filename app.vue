@@ -1,7 +1,12 @@
+<script setup>
+useHead({
+  titleTemplate: (titleChunk) => {
+    return titleChunk ? `${titleChunk} - Site Title` : "Site Title";
+  },
+});
+</script>
 <template>
   <NuxtLayout>
-    <NuxtPage />
+    <NuxtPage title="Devant" />
   </NuxtLayout>
 </template>
-
-<script></script>

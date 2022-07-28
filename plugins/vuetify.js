@@ -11,4 +11,9 @@ export default defineNuxtPlugin(nuxtApp => {
   })
 
   nuxtApp.vueApp.use(vuetify)
+  
+  const VBtn = nuxtApp.vueApp.component('VBtn')
+  VBtn.props.ripple.default = false;
+  console.log('VBtn', VBtn)
+
 })
