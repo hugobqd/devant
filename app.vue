@@ -1,7 +1,10 @@
-<template>
-  <NuxtLayout>
-    <NuxtPage />
-  </NuxtLayout>
-</template>
+<script setup>
+useHead({
+  title: "TITLE",
+  titleTemplate: "%s - Devant",
+});
+</script>
 
-<script></script>
+<template>
+  <NuxtPage />
+</template>

@@ -2,7 +2,7 @@
 
 <template>
   <section>
-    <pre>Default layout</pre>
+    <pre>Login layout</pre>
     <div class="slot-wrapper">
       <slot></slot>
     </div>
@@ -15,6 +15,6 @@ section {
 }
 .slot-wrapper {
   padding: 20px;
-  border: 1px solid black;
+  border: 1px solid red;
 }
 </style>
