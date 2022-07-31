@@ -4,7 +4,7 @@ const toto: string = "toto";
 
 <template>
   <section>
-    Some default layout shared across all pages {{ toto }}
+    Default layout shared across all pages {{ toto }}
     <slot></slot>
   </section>
 </template>
