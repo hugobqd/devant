@@ -26,9 +26,9 @@ const debug = (message: string) => {
         gap: '.5rem',
       }"
     >
-      <DvInput type="text" />
-      <DvInput type="password" />
-      <DvButton @click="debug('button click')" icon="🔒">
+      <DvInput label="login" type="text" />
+      <DvInput label="password" type="password" />
+      <DvButton @click="debug('button click')" prepend-icon="🔒" color="secondary">
         Login
       </DvButton>
     </form>

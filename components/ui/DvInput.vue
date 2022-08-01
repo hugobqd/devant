@@ -7,15 +7,8 @@ export default {
 </script>
 
 <template>
-  <input type="text" />
+  <v-text-field label="label"></v-text-field>
 </template>
 
 <style scoped>
-input {
-  padding: 10px;
-  border: 1px solid lightgrey;
-}
-input:hover {
-  border: 1px solid gray;
-}
 </style>

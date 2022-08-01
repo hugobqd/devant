@@ -9,6 +9,4 @@ useHead({
     <h1>Welcome home!</h1>
     <NuxtLink to="/login">Login</NuxtLink>
   </NuxtLayout>
-    <v-btn rounded="pill" color="primary" elevation="0">Click</v-btn>
-  </div>
 </template>
