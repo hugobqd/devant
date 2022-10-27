@@ -15,14 +15,8 @@ const debug = (message: string) => {
   <NuxtLayout>
     <NuxtLink to="/">Home</NuxtLink>
 
-    <h2>Login</h2>
-    <form
-      :style="{
-        display: 'flex',
-        flexDirection: 'column',
-        gap: '.5rem',
-      }"
-    >
+    <h2 class="text-3xl mb-6">Login</h2>
+    <form class="flex flex-col gap-5 justify-center items-start">
       <UiDvInput type="text" />
       <UiDvInput type="password" />
       <UiDvButton @click="debug('button click')" icon="🔒">
