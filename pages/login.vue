@@ -18,17 +18,11 @@ const debug = (message: string) => {
   <NuxtLayout layout="'login'">
     <NuxtLink to="/">Home</NuxtLink>
 
-    <h2>Login</h2>
-    <form
-      :style="{
-        display: 'flex',
-        flexDirection: 'column',
-        gap: '.5rem',
-      }"
-    >
+    <h2 class="text-3xl mb-6">Login</h2>
+    <form class="flex flex-col gap-5 justify-center items-start">
       <DvInput type="text" />
       <DvInput type="password" />
-      <DvButton @click="debug('button click')" icon="🔒">
+      <DvButton @click="debug('button click')" icon="🔒" colorScheme="red">
         Login
       </DvButton>
     </form>
