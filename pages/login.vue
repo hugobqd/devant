@@ -15,7 +15,7 @@ const debug = (message: string) => {
 </script>
 
 <template>
-  <NuxtLayout layout="'login'">
+  <NuxtLayout>
     <NuxtLink to="/">Home</NuxtLink>
 
     <h2>Login</h2>

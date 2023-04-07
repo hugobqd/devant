@@ -1,4 +1,11 @@
 <script lang="ts" setup>
+useHead({
+  title: "Pokemons",
+});
+definePageMeta({
+  layout: "app",
+});
+
 interface Pokemon {
   name: string;
   sprites: {
@@ -24,7 +31,7 @@ const { data } = await useFetch<Pokemon>(uri)
 </script>
 
 <template>
-  <div>
+  <NuxtLayout>
     <div v-if="!!data">
       <h1>{{ data.name }}</h1>
       <img :src="data.sprites.other['official-artwork'].front_default" />
@@ -37,6 +44,5 @@ const { data } = await useFetch<Pokemon>(uri)
         </li>
       </ul>
     </div>
-    <pre>{{ data }}</pre>
-  </div>
+  </NuxtLayout>
 </template>

@@ -1,4 +1,8 @@
 <script lang="ts" setup>
+definePageMeta({
+  layout: "app",
+});
+
 interface PokemonListResponse {
   count: number;
   next: string | null;
@@ -31,16 +35,16 @@ const getIdFromUrl = (url: string): number | null => {
 </script>
 
 <template>
-  <div>
-    <pre>{{ uri }}</pre>
-    <h1>Pokémons <code>{{ page }}</code> - {{ offset }}</h1>
-    <button @click="page--" :disabled="page === 0">-</button>
-    <button @click="page++">+</button>
+  <NuxtLayout>
+    <h1>Pokémons</h1>
     <div v-if="pending">Loading...</div>
     <article v-for="result in data?.results" :key="result.url">
-      <NuxtLink :to="''+getIdFromUrl(result.url)">
+      <NuxtLink :to="'/pokemon/'+getIdFromUrl(result.url)">
         <h3>{{ result.name }}</h3>
       </NuxtLink>
     </article>
-  </div>
+    <button @click="page--" :disabled="page === 0">Prev</button>
+    <span>{{ page + 1 }}</span>
+    <button @click="page++">Next</button>
+  </NuxtLayout>
 </template>

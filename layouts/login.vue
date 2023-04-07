@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <section>
+  <section data-layout="login">
     <pre>Login layout</pre>
     <div class="slot-wrapper">
       <slot></slot>
