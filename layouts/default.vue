@@ -1,8 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <section data-layout="default">
-    <pre>Default layout</pre>
+  <section data-layout="default" class="p-6">
     <div class="slot-wrapper">
       <slot></slot>
     </div>
@@ -10,12 +9,5 @@
 </template>
 
 <style scoped>
-section {
-  border: 1px solid #ccc;
-}
-.slot-wrapper {
-  padding: 20px;
-  border: 1px solid black;
-}
 </style>
 x

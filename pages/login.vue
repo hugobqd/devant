@@ -13,15 +13,15 @@ const debug = (message: string) => {
 
 <template>
   <NuxtLayout>
-    <NuxtLink to="/">Home</NuxtLink>
 
     <h2 class="text-3xl mb-6">Login</h2>
     <form class="flex flex-col gap-5 justify-center items-start">
-      <UiDvInput type="text" />
-      <UiDvInput type="password" />
-      <UiDvButton @click="debug('button click')" icon="🔒">
+      <DvInput type="text" />
+      <DvInput type="password" />
+      <DvButton @click="debug('button click')" icon="🔒" colorScheme="red" class="w-full">
         Login
-      </UiDvButton>
+      </DvButton>
+      <NuxtLink :to="'/lost-password'" class="text-slate-500">Mot de passe perdu ?</NuxtLink>
     </form>
   </NuxtLayout>
 </template>
