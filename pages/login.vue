@@ -1,7 +1,4 @@
 <script lang="ts" setup>
-import DvButton from "../components/ui/DvButton.vue";
-import DvInput from "../components/ui/DvInput.vue";
-
 useHead({
   title: "Login",
 });
@@ -26,11 +23,11 @@ const debug = (message: string) => {
         gap: '.5rem',
       }"
     >
-      <DvInput type="text" />
-      <DvInput type="password" />
-      <DvButton @click="debug('button click')" icon="🔒">
+      <UiDvInput type="text" />
+      <UiDvInput type="password" />
+      <UiDvButton @click="debug('button click')" icon="🔒">
         Login
-      </DvButton>
+      </UiDvButton>
     </form>
   </NuxtLayout>
 </template>
